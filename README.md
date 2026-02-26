@@ -21,24 +21,22 @@ Wissenschaftliche Projektarbeit zur Erfassung und Verwaltung globaler CO2-Emissi
 
 Um die Anwendung lokal zu starten, folgen Sie bitte diesen Schritten:
 
-### 1. Datenbank vorbereiten
+### 1. Datenbank vorbereiten & Daten importieren (Wichtig!)
+Damit die Anwendung mit dem vollständigen Datenbestand (ca. 160 Länder sowie Test-Benutzer) startet, führen Sie bitte folgende Schritte aus:
+
 * Starten Sie Ihren lokalen MySQL-Server (z. B. via **XAMPP**).
-* Erstellen Sie eine neue, leere Datenbank mit dem Namen: `likeherotozero`
-* **Wichtiger Hinweis:** Die Tabellenstruktur wird durch Hibernate (`ddl-auto: update`) beim ersten Start automatisch generiert.
+* Erstellen Sie eine neue, leere Datenbank mit dem Namen: `likeherotozero`.
+* Importieren Sie die Datei `setup_database.sql` (im Hauptverzeichnis dieses Projekts) in diese Datenbank (z. B. über den Reiter **Importieren** in phpMyAdmin).
+* **Hinweis:** Die Datei enthält sowohl die Tabellenstruktur als auch alle notwendigen Testdaten.
 
-### 2. Automatischer Daten-Import
-Die Anwendung ist so konfiguriert, dass beim ersten Start automatisch ca. 168 globale CO2-Datensätze geladen werden:
-* Die Datei `src/main/resources/import.sql` enthält die SQL-Initialisierungsbefehle.
-* Durch `spring.jpa.defer-datasource-initialization=true` wird sichergestellt, dass der Import nach der Tabellenerstellung erfolgt.
-
-### 3. Projekt importieren & Konfiguration
+### 2. Projekt importieren & Konfiguration
 * Klonen Sie das Repository oder laden Sie den Code herunter.
 * Importieren Sie das Projekt als **Maven-Projekt** in Ihre IDE (Eclipse / IntelliJ).
-* Prüfen Sie in `src/main/resources/application.properties`, ob die Zugangsdaten (Standard: `root` / kein Passwort) für Ihren MySQL-Server passen.
+* Prüfen Sie in `src/main/resources/application.properties`, ob die Zugangsdaten (Standard: `root` / kein Passwort) für Ihren lokalen MySQL-Server korrekt hinterlegt sind.
 
-### 4. Anwendung starten
+### 3. Anwendung starten
 * Führen Sie die Datei `LikeHeroToZeroApplication.java` als Java-Anwendung aus.
-* Die Anwendung ist unter `http://localhost:8080` erreichbar.
+* Die Anwendung ist anschließend im Browser unter `http://localhost:8080` erreichbar.
 
 ---
 
