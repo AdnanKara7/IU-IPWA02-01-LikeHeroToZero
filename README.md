@@ -15,7 +15,7 @@ Wissenschaftliche Projektarbeit zur Erfassung und Verwaltung globaler CO2-Emissi
 * **Frontend:** Thymeleaf, Bootstrap 5, Bootstrap Icons
 * **Datenbank:** MySQL
 
-## Installation & Start (Anleitung für die Korrektur)
+## Installation & Start
 
 Um die Anwendung lokal zu starten, folgen Sie bitte diesen Schritten:
 
@@ -44,4 +44,4 @@ Für die Korrektur können folgende Benutzerkonten verwendet werden:
 | **Wissenschaftler** | `wissenschaftler` | `co2pass` |
 
 ---
-*Erstellt im Rahmen der Projektarbeit 2026.*
+*Erstellt im Rahmen der Fallstudie für das Modul IU-IPWA02-01: Programmierung von industriellen Informationssystemen mit Java EE.*
