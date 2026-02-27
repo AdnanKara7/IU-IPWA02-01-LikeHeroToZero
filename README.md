@@ -22,7 +22,7 @@ Wissenschaftliche Projektarbeit zur Erfassung und Verwaltung globaler CO2-Emissi
 Um die Anwendung lokal zu starten, folgen Sie bitte diesen Schritten:
 
 ### 1. Datenbank vorbereiten & Daten importieren (Wichtig!)
-Damit die Anwendung mit dem vollständigen Datenbestand (ca. 160 Länder sowie Test-Benutzer) startet, führen Sie bitte folgende Schritte aus:
+Damit die Anwendung mit dem vollständigen Datenbestand (ca. 168 Länder sowie Test-Benutzer) startet, führen Sie bitte folgende Schritte aus:
 
 * Starten Sie Ihren lokalen MySQL-Server (z. B. via **XAMPP**).
 * Erstellen Sie eine neue, leere Datenbank mit dem Namen: `likeherotozero`.
